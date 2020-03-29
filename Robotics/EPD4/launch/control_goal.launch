@@ -1,0 +1,13 @@
+<launch>
+	<arg name="x1" default="5.0"/>
+	<arg name="y1" default="5.0"/>
+	<arg name="x2" default="-5.0"/>
+	<arg name="y2" default="-5.0"/>
+	<arg name="n_sector" default="8"/>
+	<node pkg="epd4" type="controlGoalParameterServer.py" name="control" output="screen">
+		<param name="path/goal1/x" value="$(arg x1)"/>
+		<param name="path/goal1/y" value="$(arg y1)"/>
+		<param name="path/goal2/x" value="$(arg x2)"/>
+		<param name="path/goal2/y" value="$(arg y2)"/>
+	</node>
+</launch>

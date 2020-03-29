@@ -1,0 +1,8 @@
+<launch>
+	<node pkg="epd4" type="controlGoalParameterServer.py" name="control">
+		<rosparam command="load" file="$(find epd4)/cfg/goalParams.yaml"/>
+	</node>
+	<node pkg="epd4" type="orcaGazebo.py" name="orca" output="screen">
+		<rosparam command="load" file="$(find epd4)/cfg/orcaParams.yaml"/>
+	</node>
+</launch>

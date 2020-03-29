@@ -1,0 +1,14 @@
+#General parameters
+ang_threshold: 5.0
+goal_tolerance: 1.00
+linear_turning: 0.00
+linear_max: 0.5
+angular_max: 0.30
+
+path:
+  goal1:
+    x: -3.0
+    y: -3.0
+  goal2:
+    x: 1.0
+    y: 0.0
